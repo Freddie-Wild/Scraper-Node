@@ -1,0 +1,151 @@
+Search Date,Airport,Product Name,From Date,To Date,Price
+Mon Jan 08 2024 15:11:38 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-09,2024-01-16,£44.99
+Mon Jan 08 2024 15:11:38 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-09,2024-01-16,£54.99
+Mon Jan 08 2024 15:11:38 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-09,2024-01-16,£49.99
+Mon Jan 08 2024 15:11:39 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-09,2024-01-16,£51.99
+Mon Jan 08 2024 15:11:39 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-09,2024-01-16,£81.22
+Mon Jan 08 2024 15:11:46 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-10,2024-01-17,£44.99
+Mon Jan 08 2024 15:11:46 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-10,2024-01-17,£54.99
+Mon Jan 08 2024 15:11:46 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-10,2024-01-17,£49.99
+Mon Jan 08 2024 15:11:46 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-10,2024-01-17,£51.99
+Mon Jan 08 2024 15:11:46 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-10,2024-01-17,£85.50
+Mon Jan 08 2024 15:11:55 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-11,2024-01-18,£44.99
+Mon Jan 08 2024 15:11:55 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-11,2024-01-18,£54.99
+Mon Jan 08 2024 15:11:55 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-11,2024-01-18,£49.99
+Mon Jan 08 2024 15:11:55 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-11,2024-01-18,£51.99
+Mon Jan 08 2024 15:11:55 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-11,2024-01-18,£76.95
+Mon Jan 08 2024 15:12:03 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-12,2024-01-19,£44.99
+Mon Jan 08 2024 15:12:03 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-12,2024-01-19,£54.99
+Mon Jan 08 2024 15:12:03 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-12,2024-01-19,£49.99
+Mon Jan 08 2024 15:12:03 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-12,2024-01-19,£51.99
+Mon Jan 08 2024 15:12:03 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-12,2024-01-19,£76.95
+Mon Jan 08 2024 15:12:10 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-13,2024-01-20,£44.99
+Mon Jan 08 2024 15:12:10 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-13,2024-01-20,£54.99
+Mon Jan 08 2024 15:12:10 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-13,2024-01-20,£49.99
+Mon Jan 08 2024 15:12:10 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-13,2024-01-20,£51.99
+Mon Jan 08 2024 15:12:10 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-13,2024-01-20,£76.95
+Mon Jan 08 2024 15:12:17 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-14,2024-01-21,£44.99
+Mon Jan 08 2024 15:12:17 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-14,2024-01-21,£54.99
+Mon Jan 08 2024 15:12:17 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-14,2024-01-21,£49.99
+Mon Jan 08 2024 15:12:17 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-14,2024-01-21,£51.99
+Mon Jan 08 2024 15:12:17 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-14,2024-01-21,£72.67
+Mon Jan 08 2024 15:12:25 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-15,2024-01-22,£44.99
+Mon Jan 08 2024 15:12:25 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-15,2024-01-22,£54.99
+Mon Jan 08 2024 15:12:25 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-15,2024-01-22,£49.99
+Mon Jan 08 2024 15:12:25 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-15,2024-01-22,£51.99
+Mon Jan 08 2024 15:12:25 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-15,2024-01-22,£72.67
+Mon Jan 08 2024 15:12:31 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-16,2024-01-23,£44.99
+Mon Jan 08 2024 15:12:31 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-16,2024-01-23,£54.99
+Mon Jan 08 2024 15:12:31 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-16,2024-01-23,£49.99
+Mon Jan 08 2024 15:12:31 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-16,2024-01-23,£51.99
+Mon Jan 08 2024 15:12:31 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-16,2024-01-23,£72.67
+Mon Jan 08 2024 15:12:39 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-17,2024-01-24,£44.99
+Mon Jan 08 2024 15:12:39 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-17,2024-01-24,£54.99
+Mon Jan 08 2024 15:12:39 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-17,2024-01-24,£49.99
+Mon Jan 08 2024 15:12:40 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-17,2024-01-24,£51.99
+Mon Jan 08 2024 15:12:40 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-17,2024-01-24,£72.67
+Mon Jan 08 2024 15:12:48 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-18,2024-01-25,£44.99
+Mon Jan 08 2024 15:12:48 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-18,2024-01-25,£54.99
+Mon Jan 08 2024 15:12:48 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-18,2024-01-25,£49.99
+Mon Jan 08 2024 15:12:48 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-18,2024-01-25,£51.99
+Mon Jan 08 2024 15:12:48 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-18,2024-01-25,£72.67
+Mon Jan 08 2024 15:12:55 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-19,2024-01-26,£44.99
+Mon Jan 08 2024 15:12:55 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-19,2024-01-26,£54.99
+Mon Jan 08 2024 15:12:55 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-19,2024-01-26,£49.99
+Mon Jan 08 2024 15:12:55 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-19,2024-01-26,£51.99
+Mon Jan 08 2024 15:12:55 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-19,2024-01-26,£72.67
+Mon Jan 08 2024 15:13:02 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-20,2024-01-27,£44.99
+Mon Jan 08 2024 15:13:02 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-20,2024-01-27,£54.99
+Mon Jan 08 2024 15:13:02 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-20,2024-01-27,£49.99
+Mon Jan 08 2024 15:13:02 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-20,2024-01-27,£51.99
+Mon Jan 08 2024 15:13:02 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-20,2024-01-27,£72.67
+Mon Jan 08 2024 15:13:11 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-21,2024-01-28,£44.99
+Mon Jan 08 2024 15:13:11 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-21,2024-01-28,£54.99
+Mon Jan 08 2024 15:13:11 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-21,2024-01-28,£49.99
+Mon Jan 08 2024 15:13:11 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-21,2024-01-28,£51.99
+Mon Jan 08 2024 15:13:11 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-21,2024-01-28,£72.67
+Mon Jan 08 2024 15:13:19 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-22,2024-01-29,£44.99
+Mon Jan 08 2024 15:13:19 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-22,2024-01-29,£54.99
+Mon Jan 08 2024 15:13:19 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-22,2024-01-29,£49.99
+Mon Jan 08 2024 15:13:19 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-22,2024-01-29,£51.99
+Mon Jan 08 2024 15:13:19 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-22,2024-01-29,£72.67
+Mon Jan 08 2024 15:13:26 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-23,2024-01-30,£44.99
+Mon Jan 08 2024 15:13:26 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-23,2024-01-30,£54.99
+Mon Jan 08 2024 15:13:26 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-23,2024-01-30,£49.99
+Mon Jan 08 2024 15:13:26 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-23,2024-01-30,£51.99
+Mon Jan 08 2024 15:13:26 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-23,2024-01-30,£72.67
+Mon Jan 08 2024 15:13:33 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-24,2024-01-31,£44.99
+Mon Jan 08 2024 15:13:33 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-24,2024-01-31,£54.99
+Mon Jan 08 2024 15:13:33 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-24,2024-01-31,£49.99
+Mon Jan 08 2024 15:13:33 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-24,2024-01-31,£51.99
+Mon Jan 08 2024 15:13:33 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-24,2024-01-31,£72.67
+Mon Jan 08 2024 15:13:41 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-25,2024-02-01,£44.99
+Mon Jan 08 2024 15:13:41 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-25,2024-02-01,£54.99
+Mon Jan 08 2024 15:13:41 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-25,2024-02-01,£49.99
+Mon Jan 08 2024 15:13:41 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-25,2024-02-01,£51.99
+Mon Jan 08 2024 15:13:41 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-25,2024-02-01,£72.67
+Mon Jan 08 2024 15:13:48 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-26,2024-02-02,£44.99
+Mon Jan 08 2024 15:13:48 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-26,2024-02-02,£54.99
+Mon Jan 08 2024 15:13:48 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-26,2024-02-02,£49.99
+Mon Jan 08 2024 15:13:48 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-26,2024-02-02,£51.99
+Mon Jan 08 2024 15:13:48 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-26,2024-02-02,£72.67
+Mon Jan 08 2024 15:13:55 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-27,2024-02-03,£44.99
+Mon Jan 08 2024 15:13:55 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-27,2024-02-03,£54.99
+Mon Jan 08 2024 15:13:55 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-27,2024-02-03,£49.99
+Mon Jan 08 2024 15:13:55 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-27,2024-02-03,£51.99
+Mon Jan 08 2024 15:13:55 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-27,2024-02-03,£72.67
+Mon Jan 08 2024 15:14:02 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-28,2024-02-04,£44.99
+Mon Jan 08 2024 15:14:02 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-28,2024-02-04,£54.99
+Mon Jan 08 2024 15:14:02 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-28,2024-02-04,£49.99
+Mon Jan 08 2024 15:14:02 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-28,2024-02-04,£51.99
+Mon Jan 08 2024 15:14:02 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-28,2024-02-04,£72.67
+Mon Jan 08 2024 15:14:20 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-29,2024-02-05,£44.99
+Mon Jan 08 2024 15:14:20 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-29,2024-02-05,£54.99
+Mon Jan 08 2024 15:14:20 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-29,2024-02-05,£49.99
+Mon Jan 08 2024 15:14:20 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-29,2024-02-05,£51.99
+Mon Jan 08 2024 15:14:21 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-29,2024-02-05,£72.67
+Mon Jan 08 2024 15:14:28 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-30,2024-02-06,£44.99
+Mon Jan 08 2024 15:14:28 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-30,2024-02-06,£54.99
+Mon Jan 08 2024 15:14:28 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-30,2024-02-06,£49.99
+Mon Jan 08 2024 15:14:28 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-30,2024-02-06,£51.99
+Mon Jan 08 2024 15:14:28 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-30,2024-02-06,£72.67
+Mon Jan 08 2024 15:14:35 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-01-31,2024-02-07,£44.99
+Mon Jan 08 2024 15:14:35 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-01-31,2024-02-07,£54.99
+Mon Jan 08 2024 15:14:35 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-01-31,2024-02-07,£49.99
+Mon Jan 08 2024 15:14:35 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-01-31,2024-02-07,£51.99
+Mon Jan 08 2024 15:14:35 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-01-31,2024-02-07,£72.67
+Mon Jan 08 2024 15:14:43 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-01,2024-02-08,£44.99
+Mon Jan 08 2024 15:14:43 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-01,2024-02-08,£54.99
+Mon Jan 08 2024 15:14:43 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-01,2024-02-08,£49.99
+Mon Jan 08 2024 15:14:43 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-01,2024-02-08,£51.99
+Mon Jan 08 2024 15:14:43 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-01,2024-02-08,£72.67
+Mon Jan 08 2024 15:14:51 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-02,2024-02-09,£44.99
+Mon Jan 08 2024 15:14:51 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-02,2024-02-09,£54.99
+Mon Jan 08 2024 15:14:51 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-02,2024-02-09,£49.99
+Mon Jan 08 2024 15:14:51 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-02,2024-02-09,£51.99
+Mon Jan 08 2024 15:14:51 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-02,2024-02-09,£72.67
+Mon Jan 08 2024 15:14:59 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-03,2024-02-10,£44.99
+Mon Jan 08 2024 15:14:59 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-03,2024-02-10,£54.99
+Mon Jan 08 2024 15:14:59 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-03,2024-02-10,£49.99
+Mon Jan 08 2024 15:14:59 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-03,2024-02-10,£51.99
+Mon Jan 08 2024 15:14:59 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-03,2024-02-10,£72.67
+Mon Jan 08 2024 15:15:07 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-04,2024-02-11,£44.99
+Mon Jan 08 2024 15:15:07 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-04,2024-02-11,£54.99
+Mon Jan 08 2024 15:15:07 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-04,2024-02-11,£49.99
+Mon Jan 08 2024 15:15:07 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-04,2024-02-11,£51.99
+Mon Jan 08 2024 15:15:07 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-04,2024-02-11,£72.67
+Mon Jan 08 2024 15:15:17 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-05,2024-02-12,£44.99
+Mon Jan 08 2024 15:15:17 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-05,2024-02-12,£54.99
+Mon Jan 08 2024 15:15:17 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-05,2024-02-12,£49.99
+Mon Jan 08 2024 15:15:17 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-05,2024-02-12,£51.99
+Mon Jan 08 2024 15:15:17 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-05,2024-02-12,£72.67
+Mon Jan 08 2024 15:15:25 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-06,2024-02-13,£44.99
+Mon Jan 08 2024 15:15:25 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-06,2024-02-13,£54.99
+Mon Jan 08 2024 15:15:25 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-06,2024-02-13,£49.99
+Mon Jan 08 2024 15:15:25 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-06,2024-02-13,£51.99
+Mon Jan 08 2024 15:15:25 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-06,2024-02-13,£72.67
+Mon Jan 08 2024 15:15:33 GMT+0000 (Greenwich Mean Time),Glasgow,Flying Scot Park and Ride,2024-02-07,2024-02-14,£44.99
+Mon Jan 08 2024 15:15:33 GMT+0000 (Greenwich Mean Time),Glasgow,Official Airport Long Stay,2024-02-07,2024-02-14,£54.99
+Mon Jan 08 2024 15:15:33 GMT+0000 (Greenwich Mean Time),Glasgow,Skyport Park and Ride,2024-02-07,2024-02-14,£49.99
+Mon Jan 08 2024 15:15:33 GMT+0000 (Greenwich Mean Time),Glasgow,Direct Parking,2024-02-07,2024-02-14,£51.99
+Mon Jan 08 2024 15:15:33 GMT+0000 (Greenwich Mean Time),Glasgow,Onsite - Short Stay - Flex Plus,2024-02-07,2024-02-14,£72.67

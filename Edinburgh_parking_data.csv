@@ -1,0 +1,412 @@
+Search Date,Airport,Product Name,From Date,To Date,Price
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-09,2024-01-16,£29.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-09,2024-01-16,£29.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-09,2024-01-16,£32.76
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-09,2024-01-16,£32.76
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-09,2024-01-16,£37.76
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-09,2024-01-16,£39.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-09,2024-01-16,£39.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-09,2024-01-16,£59.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-09,2024-01-16,£95.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-09,2024-01-16,£99.99
+Mon Jan 08 2024 15:01:39 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-09,2024-01-16,£114.99
+Mon Jan 08 2024 15:01:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-10,2024-01-17,£29.99
+Mon Jan 08 2024 15:01:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-10,2024-01-17,£29.99
+Mon Jan 08 2024 15:01:47 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-10,2024-01-17,£32.76
+Mon Jan 08 2024 15:01:47 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-10,2024-01-17,£32.76
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-10,2024-01-17,£37.76
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-10,2024-01-17,£39.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-10,2024-01-17,£39.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-10,2024-01-17,£44.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-10,2024-01-17,£49.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-10,2024-01-17,£59.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-10,2024-01-17,£84.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-10,2024-01-17,£85.99
+Mon Jan 08 2024 15:01:48 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-10,2024-01-17,£104.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-11,2024-01-18,£29.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-11,2024-01-18,£29.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-11,2024-01-18,£32.76
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-11,2024-01-18,£32.76
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-11,2024-01-18,£37.76
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-11,2024-01-18,£39.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-11,2024-01-18,£39.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-11,2024-01-18,£44.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-11,2024-01-18,£49.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-11,2024-01-18,£59.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-11,2024-01-18,£84.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-11,2024-01-18,£85.99
+Mon Jan 08 2024 15:01:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-11,2024-01-18,£104.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-12,2024-01-19,£29.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-12,2024-01-19,£29.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-12,2024-01-19,£32.76
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-12,2024-01-19,£32.76
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-12,2024-01-19,£37.76
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-12,2024-01-19,£39.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-12,2024-01-19,£44.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-12,2024-01-19,£49.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-12,2024-01-19,£59.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-12,2024-01-19,£68.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-12,2024-01-19,£75.99
+Mon Jan 08 2024 15:02:05 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-12,2024-01-19,£84.99
+Mon Jan 08 2024 15:02:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-12,2024-01-19,£104.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-13,2024-01-20,£29.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-13,2024-01-20,£29.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-13,2024-01-20,£32.76
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-13,2024-01-20,£32.76
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-13,2024-01-20,£37.76
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-13,2024-01-20,£39.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-13,2024-01-20,£44.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-13,2024-01-20,£49.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-13,2024-01-20,£59.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-13,2024-01-20,£59.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-13,2024-01-20,£75.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-13,2024-01-20,£78.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-13,2024-01-20,£84.99
+Mon Jan 08 2024 15:02:15 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-13,2024-01-20,£104.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-14,2024-01-21,£29.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-14,2024-01-21,£29.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-14,2024-01-21,£32.76
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-14,2024-01-21,£32.76
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-14,2024-01-21,£37.76
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-14,2024-01-21,£39.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-14,2024-01-21,£39.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-14,2024-01-21,£44.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-14,2024-01-21,£49.99
+Mon Jan 08 2024 15:02:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-14,2024-01-21,£59.99
+Mon Jan 08 2024 15:02:25 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-14,2024-01-21,£59.99
+Mon Jan 08 2024 15:02:25 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-14,2024-01-21,£75.99
+Mon Jan 08 2024 15:02:25 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-14,2024-01-21,£84.99
+Mon Jan 08 2024 15:02:25 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-14,2024-01-21,£104.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-15,2024-01-22,£29.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-15,2024-01-22,£29.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-15,2024-01-22,£32.76
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-15,2024-01-22,£32.76
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-15,2024-01-22,£37.76
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-15,2024-01-22,£39.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-15,2024-01-22,£39.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-15,2024-01-22,£44.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-15,2024-01-22,£49.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-15,2024-01-22,£59.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-15,2024-01-22,£59.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-15,2024-01-22,£75.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-15,2024-01-22,£84.99
+Mon Jan 08 2024 15:02:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-15,2024-01-22,£104.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-16,2024-01-23,£29.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-16,2024-01-23,£21.56
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-16,2024-01-23,£21.56
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-16,2024-01-23,£26.56
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-16,2024-01-23,£29.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-16,2024-01-23,£39.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-16,2024-01-23,£39.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-16,2024-01-23,£44.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-16,2024-01-23,£49.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-16,2024-01-23,£59.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-16,2024-01-23,£59.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-16,2024-01-23,£74.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-16,2024-01-23,£75.99
+Mon Jan 08 2024 15:02:41 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-16,2024-01-23,£84.99
+Mon Jan 08 2024 15:02:50 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-17,2024-01-24,£29.99
+Mon Jan 08 2024 15:02:50 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-17,2024-01-24,£21.56
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-17,2024-01-24,£21.56
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-17,2024-01-24,£26.56
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-17,2024-01-24,£29.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-17,2024-01-24,£39.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-17,2024-01-24,£39.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-17,2024-01-24,£44.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-17,2024-01-24,£49.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-17,2024-01-24,£59.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-17,2024-01-24,£59.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-17,2024-01-24,£74.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-17,2024-01-24,£75.99
+Mon Jan 08 2024 15:02:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-17,2024-01-24,£84.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-18,2024-01-25,£29.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-18,2024-01-25,£21.56
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-18,2024-01-25,£21.56
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-18,2024-01-25,£26.56
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-18,2024-01-25,£29.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-18,2024-01-25,£39.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-18,2024-01-25,£39.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-18,2024-01-25,£44.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-18,2024-01-25,£49.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-18,2024-01-25,£59.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-18,2024-01-25,£59.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-18,2024-01-25,£74.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-18,2024-01-25,£75.99
+Mon Jan 08 2024 15:03:13 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-18,2024-01-25,£84.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-19,2024-01-26,£29.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-19,2024-01-26,£21.56
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-19,2024-01-26,£21.56
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-19,2024-01-26,£26.56
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-19,2024-01-26,£29.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-19,2024-01-26,£39.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-19,2024-01-26,£39.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-19,2024-01-26,£44.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-19,2024-01-26,£49.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-19,2024-01-26,£59.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-19,2024-01-26,£59.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-19,2024-01-26,£74.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-19,2024-01-26,£75.99
+Mon Jan 08 2024 15:03:24 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-19,2024-01-26,£84.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-20,2024-01-27,£29.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-20,2024-01-27,£21.56
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-20,2024-01-27,£21.56
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-20,2024-01-27,£26.56
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-20,2024-01-27,£29.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-20,2024-01-27,£39.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-20,2024-01-27,£39.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-20,2024-01-27,£44.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-20,2024-01-27,£49.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-20,2024-01-27,£59.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-20,2024-01-27,£59.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-20,2024-01-27,£74.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-20,2024-01-27,£75.99
+Mon Jan 08 2024 15:03:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-20,2024-01-27,£84.99
+Mon Jan 08 2024 15:03:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-21,2024-01-28,£29.99
+Mon Jan 08 2024 15:03:42 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-21,2024-01-28,£21.56
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-21,2024-01-28,£21.56
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-21,2024-01-28,£26.56
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-21,2024-01-28,£29.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-21,2024-01-28,£39.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-21,2024-01-28,£39.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-21,2024-01-28,£44.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-21,2024-01-28,£49.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-21,2024-01-28,£59.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-21,2024-01-28,£59.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-21,2024-01-28,£65.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-21,2024-01-28,£74.99
+Mon Jan 08 2024 15:03:43 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-21,2024-01-28,£84.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-22,2024-01-29,£29.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-22,2024-01-29,£21.56
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-22,2024-01-29,£21.56
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-22,2024-01-29,£26.56
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-22,2024-01-29,£29.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-22,2024-01-29,£39.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-22,2024-01-29,£39.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-22,2024-01-29,£44.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-22,2024-01-29,£49.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-22,2024-01-29,£59.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-22,2024-01-29,£59.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-22,2024-01-29,£65.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-22,2024-01-29,£74.99
+Mon Jan 08 2024 15:03:53 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-22,2024-01-29,£84.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-23,2024-01-30,£29.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-23,2024-01-30,£21.56
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-23,2024-01-30,£21.56
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-23,2024-01-30,£26.56
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-23,2024-01-30,£29.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-23,2024-01-30,£39.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-23,2024-01-30,£39.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-23,2024-01-30,£44.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-23,2024-01-30,£49.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-23,2024-01-30,£59.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-23,2024-01-30,£59.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-23,2024-01-30,£65.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-23,2024-01-30,£74.99
+Mon Jan 08 2024 15:04:03 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-23,2024-01-30,£84.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-24,2024-01-31,£29.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-24,2024-01-31,£21.56
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-24,2024-01-31,£21.56
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-24,2024-01-31,£26.56
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-24,2024-01-31,£29.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-24,2024-01-31,£39.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-24,2024-01-31,£39.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-24,2024-01-31,£44.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-24,2024-01-31,£49.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-24,2024-01-31,£59.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-24,2024-01-31,£59.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-24,2024-01-31,£65.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-24,2024-01-31,£74.99
+Mon Jan 08 2024 15:04:14 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-24,2024-01-31,£84.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-25,2024-02-01,£29.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-25,2024-02-01,£21.56
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-25,2024-02-01,£21.56
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-25,2024-02-01,£26.56
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-25,2024-02-01,£29.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-25,2024-02-01,£39.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-25,2024-02-01,£39.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-25,2024-02-01,£44.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-25,2024-02-01,£49.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-25,2024-02-01,£59.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-25,2024-02-01,£59.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-25,2024-02-01,£65.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-25,2024-02-01,£74.99
+Mon Jan 08 2024 15:04:23 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-25,2024-02-01,£84.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-26,2024-02-02,£29.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-26,2024-02-02,£21.56
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-26,2024-02-02,£21.56
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-26,2024-02-02,£26.56
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-26,2024-02-02,£29.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-26,2024-02-02,£39.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-26,2024-02-02,£39.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-26,2024-02-02,£44.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-26,2024-02-02,£49.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-26,2024-02-02,£59.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-26,2024-02-02,£59.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-26,2024-02-02,£65.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-26,2024-02-02,£74.99
+Mon Jan 08 2024 15:04:33 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-26,2024-02-02,£84.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-27,2024-02-03,£29.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-27,2024-02-03,£21.56
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-27,2024-02-03,£21.56
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-27,2024-02-03,£26.56
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-27,2024-02-03,£29.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-27,2024-02-03,£39.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-27,2024-02-03,£39.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-27,2024-02-03,£44.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-27,2024-02-03,£49.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-27,2024-02-03,£59.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-27,2024-02-03,£59.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-27,2024-02-03,£65.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-27,2024-02-03,£74.99
+Mon Jan 08 2024 15:04:42 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-27,2024-02-03,£84.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-28,2024-02-04,£29.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-28,2024-02-04,£21.56
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-28,2024-02-04,£21.56
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-28,2024-02-04,£26.56
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-28,2024-02-04,£29.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-28,2024-02-04,£39.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-28,2024-02-04,£39.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-28,2024-02-04,£44.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-28,2024-02-04,£49.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-28,2024-02-04,£59.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-28,2024-02-04,£59.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-28,2024-02-04,£65.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-28,2024-02-04,£74.99
+Mon Jan 08 2024 15:04:51 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-28,2024-02-04,£84.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-29,2024-02-05,£29.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-29,2024-02-05,£21.56
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-29,2024-02-05,£21.56
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-29,2024-02-05,£26.56
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-29,2024-02-05,£29.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-29,2024-02-05,£39.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-29,2024-02-05,£39.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-29,2024-02-05,£44.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-29,2024-02-05,£49.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-29,2024-02-05,£59.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-29,2024-02-05,£59.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-29,2024-02-05,£65.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-29,2024-02-05,£74.99
+Mon Jan 08 2024 15:05:00 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-29,2024-02-05,£84.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-30,2024-02-06,£29.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-30,2024-02-06,£21.56
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-30,2024-02-06,£21.56
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-30,2024-02-06,£26.56
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-30,2024-02-06,£29.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-30,2024-02-06,£39.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-30,2024-02-06,£39.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-30,2024-02-06,£44.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-30,2024-02-06,£49.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-30,2024-02-06,£59.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-30,2024-02-06,£59.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-30,2024-02-06,£64.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-30,2024-02-06,£65.99
+Mon Jan 08 2024 15:05:10 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-30,2024-02-06,£74.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-01-31,2024-02-07,£29.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-01-31,2024-02-07,£21.56
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-01-31,2024-02-07,£21.56
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-01-31,2024-02-07,£26.56
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-01-31,2024-02-07,£29.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-01-31,2024-02-07,£39.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-01-31,2024-02-07,£39.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-01-31,2024-02-07,£44.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-01-31,2024-02-07,£49.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-01-31,2024-02-07,£59.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-01-31,2024-02-07,£59.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-01-31,2024-02-07,£64.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-01-31,2024-02-07,£65.99
+Mon Jan 08 2024 15:05:20 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-01-31,2024-02-07,£74.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-01,2024-02-08,£40.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-01,2024-02-08,£21.56
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-01,2024-02-08,£21.56
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-01,2024-02-08,£26.56
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-01,2024-02-08,£34.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-02-01,2024-02-08,£39.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-01,2024-02-08,£40.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-01,2024-02-08,£64.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-01,2024-02-08,£65.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-01,2024-02-08,£67.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-01,2024-02-08,£69.99
+Mon Jan 08 2024 15:05:28 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-01,2024-02-08,£69.99
+Mon Jan 08 2024 15:05:29 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-01,2024-02-08,£74.99
+Mon Jan 08 2024 15:05:29 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-01,2024-02-08,£79.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-02,2024-02-09,£40.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-02,2024-02-09,£21.56
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-02,2024-02-09,£21.56
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-02,2024-02-09,£26.56
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-02,2024-02-09,£34.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-02-02,2024-02-09,£39.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-02,2024-02-09,£40.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-02,2024-02-09,£64.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-02,2024-02-09,£65.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-02,2024-02-09,£67.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-02,2024-02-09,£69.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-02,2024-02-09,£69.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-02,2024-02-09,£74.99
+Mon Jan 08 2024 15:05:38 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-02,2024-02-09,£79.99
+Mon Jan 08 2024 15:05:46 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-03,2024-02-10,£40.99
+Mon Jan 08 2024 15:05:46 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-03,2024-02-10,£21.56
+Mon Jan 08 2024 15:05:46 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-03,2024-02-10,£21.56
+Mon Jan 08 2024 15:05:46 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-03,2024-02-10,£26.56
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-03,2024-02-10,£34.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-02-03,2024-02-10,£39.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-03,2024-02-10,£40.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-03,2024-02-10,£64.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-03,2024-02-10,£65.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-03,2024-02-10,£67.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-03,2024-02-10,£69.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-03,2024-02-10,£69.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-03,2024-02-10,£74.99
+Mon Jan 08 2024 15:05:47 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-03,2024-02-10,£79.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-04,2024-02-11,£40.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-04,2024-02-11,£21.56
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-04,2024-02-11,£21.56
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-04,2024-02-11,£26.56
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-04,2024-02-11,£34.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Special Offer,2024-02-04,2024-02-11,£39.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-04,2024-02-11,£40.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-04,2024-02-11,£64.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-04,2024-02-11,£65.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-04,2024-02-11,£67.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-04,2024-02-11,£69.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-04,2024-02-11,£69.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-04,2024-02-11,£74.99
+Mon Jan 08 2024 15:05:56 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-04,2024-02-11,£79.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-05,2024-02-12,£40.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-05,2024-02-12,£34.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-05,2024-02-12,£40.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-05,2024-02-12,£40.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-05,2024-02-12,£40.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-05,2024-02-12,£45.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-05,2024-02-12,£64.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-05,2024-02-12,£65.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-05,2024-02-12,£67.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-05,2024-02-12,£69.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-05,2024-02-12,£69.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-05,2024-02-12,£74.99
+Mon Jan 08 2024 15:06:06 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-05,2024-02-12,£79.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-06,2024-02-13,£40.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-06,2024-02-13,£34.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-06,2024-02-13,£40.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-06,2024-02-13,£40.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-06,2024-02-13,£40.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-06,2024-02-13,£45.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-06,2024-02-13,£64.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-06,2024-02-13,£65.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-06,2024-02-13,£67.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-06,2024-02-13,£69.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-06,2024-02-13,£69.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-06,2024-02-13,£74.99
+Mon Jan 08 2024 15:06:17 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-06,2024-02-13,£79.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Flying Scot - Park and Ride,2024-02-07,2024-02-14,£40.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport FastPark - Refundable,2024-02-07,2024-02-14,£34.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Low Cost Park and Ride,2024-02-07,2024-02-14,£40.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,NCP ScotPark,2024-02-07,2024-02-14,£40.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir - Holiday Flex Plus - Car Park 1,2024-02-07,2024-02-14,£40.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,PremiAir Premium Flex Long Stay - Car park 2,2024-02-07,2024-02-14,£45.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Terminal - Refundable,2024-02-07,2024-02-14,£64.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Mid Stay - Refundable,2024-02-07,2024-02-14,£65.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks Early Bird - NON-FLEX,2024-02-07,2024-02-14,£67.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Airport Long Stay - Refundable,2024-02-07,2024-02-14,£69.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride,2024-02-07,2024-02-14,£69.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Official Terminal Multi Storey + fastTRACK,2024-02-07,2024-02-14,£74.99
+Mon Jan 08 2024 15:06:27 GMT+0000 (Greenwich Mean Time),Edinburgh,Secure Airparks - Park and Ride - Green Electric Bay,2024-02-07,2024-02-14,£79.99
