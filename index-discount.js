@@ -42,6 +42,7 @@ async function scrapeData(fromDate, toDate, airport) {
       20000
     );
 
+    /*
     // Wait for the "Reveal" button to be present in the DOM and click it
     console.log('Waiting for reveal button');
     const revealButton = await driver.wait(until.elementLocated(By.className('btn-reveal')), 10000);
@@ -72,6 +73,7 @@ async function scrapeData(fromDate, toDate, airport) {
       let submitButton = await driver.findElement(submitButtonLocator);
       await submitButton.click();
     }
+    */
 
     // Wait for the results to load
     await driver.wait(until.elementsLocated(By.className('parking_info_block')), 20000);
