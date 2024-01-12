@@ -15,7 +15,7 @@ async function scrapeData(fromDate, toDate, airport) {
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
 
   try {
-    await driver.get("https://www.skyparksecure.com/?promo=SEO12");
+    await driver.get("https://www.skyparksecure.com/?promo=SP20UK");
 
     const cookiesButton = await driver.wait(
       until.elementLocated(By.id("onetrust-accept-btn-handler")),
@@ -44,6 +44,8 @@ async function scrapeData(fromDate, toDate, airport) {
       until.elementsLocated(By.className("parking_info_block")),
       20000
     );
+
+    /*
 
     console.log("Waiting for reveal button");
     const revealButton = await driver.wait(
@@ -81,6 +83,7 @@ async function scrapeData(fromDate, toDate, airport) {
     } catch (error) {
       console.error("Encountered an error", error);
     }
+    */
 
     await driver.wait(
       until.elementsLocated(By.className("parking_info_block")),
@@ -97,7 +100,7 @@ async function scrapeData(fromDate, toDate, airport) {
       try {
         oldPrice = await block.findElement(By.className("old-price")).getText();
       } catch (error) {
-        oldPrice = "0";
+        oldPrice = price;
       }
       let searchDate = new Date().toISOString();
       data.push({
@@ -147,7 +150,7 @@ async function main() {
     .forBrowser("chrome")
     .setChromeOptions(options)
     .build();
-  
+
   try {
     const airports = [
       "Birmingham",
