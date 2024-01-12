@@ -8,7 +8,10 @@ async function scrapeData(fromDate, toDate, airport) {
   let options = new chrome.Options();
   options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 
-  let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
+  let driver = await new Builder()
+    .forBrowser("chrome")
+    .setChromeOptions(options)
+    .build();
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
 
   try {
@@ -42,62 +45,78 @@ async function scrapeData(fromDate, toDate, airport) {
       20000
     );
 
-    /*
-    // Wait for the "Reveal" button to be present in the DOM and click it
-    console.log('Waiting for reveal button');
-    const revealButton = await driver.wait(until.elementLocated(By.className('btn-reveal')), 10000);
+    console.log("Waiting for reveal button");
+    const revealButton = await driver.wait(
+      until.elementLocated(By.className("btn-reveal")),
+      10000
+    );
     await revealButton.click();
-    console.log('Clicked reveal button');
+    console.log("Clicked reveal button");
 
-    // Wait for the email input field in the modal to be present in the DOM, clear it, and enter the email address
-    console.log('Waiting for email input');
-    const emailInput = await driver.wait(until.elementLocated(By.css('input[type="email"]')), 10000);
+    console.log("Waiting for email input");
+    const emailInput = await driver.wait(
+      until.elementLocated(By.css('input[type="email"]')),
+      10000
+    );
     await emailInput.clear();
-    await emailInput.sendKeys('test@test.com');
-    console.log('Entered email address');
+    await emailInput.sendKeys("test@test.com");
+    console.log("Entered email address");
 
-    // Handle submit button interaction
     try {
-      const submitButtonLocator = By.css('.input-group .btn.btn-secondary');
-      await driver.wait(until.elementLocated(submitButtonLocator), 10000);
-      await driver.wait(until.elementIsVisible(submitButtonLocator), 10000);
-      await driver.wait(until.elementToBeClickable(submitButtonLocator), 10000);
-      let submitButton = await driver.findElement(submitButtonLocator);
-      await submitButton.click();
+      const modalLocator = By.className("sps-modal-container");
+      await driver.wait(until.elementLocated(modalLocator), 10000);
+      await driver.wait(
+        until.elementIsVisible(driver.findElement(modalLocator)),
+        10000
+      );
+
+      const activateButtonLocator = By.css(
+        ".sps-modal-container .btn.btn-secondary"
+      );
+      const activateButton = await driver.wait(
+        until.elementLocated(activateButtonLocator),
+        10000
+      );
+      await activateButton.click();
     } catch (error) {
-      console.error("Encountered a stale element error, re-attempting...", error);
-      const submitButtonLocator = By.css('.input-group .btn.btn-secondary');
-      await driver.wait(until.elementLocated(submitButtonLocator), 10000);
-      await driver.wait(until.elementIsVisible(submitButtonLocator), 10000);
-      await driver.wait(until.elementToBeClickable(submitButtonLocator), 10000);
-      let submitButton = await driver.findElement(submitButtonLocator);
-      await submitButton.click();
+      console.error("Encountered an error", error);
     }
-    */
 
-    // Wait for the results to load
-    await driver.wait(until.elementsLocated(By.className('parking_info_block')), 20000);
+    await driver.wait(
+      until.elementsLocated(By.className("parking_info_block")),
+      20000
+    );
 
-    // Scrape the results
-    let blocks = await driver.findElements(By.className('parking_info_block'));
+    let blocks = await driver.findElements(By.className("parking_info_block"));
     let data = [];
 
     for (let block of blocks) {
-      let productName = await block.findElement(By.tagName('h2')).getText();
-      let price = await block.findElement(By.className('price')).getText();
+      let productName = await block.findElement(By.tagName("h2")).getText();
+      let price = await block.findElement(By.className("price")).getText();
       let oldPrice;
       try {
-        oldPrice = await block.findElement(By.className('old-price')).getText();
+        oldPrice = await block.findElement(By.className("old-price")).getText();
       } catch (error) {
-        oldPrice = 'N/A'; // or '0', or any other default value
+        oldPrice = "0";
       }
       let searchDate = new Date().toISOString();
-      data.push({ airport, productName, fromDate, toDate, price, oldPrice, searchDate });
+      data.push({
+        airport,
+        productName,
+        fromDate,
+        toDate,
+        price,
+        oldPrice,
+        searchDate,
+      });
     }
-    console.info(`Scraping completed for ${airport} from ${fromDate} to ${toDate}`);
+
+    console.info(
+      `Scraping completed for ${airport} from ${fromDate} to ${toDate}`
+    );
     return data;
   } finally {
-    await driver.quit();
+    console.log("finished");
   }
 }
 
@@ -106,7 +125,7 @@ async function writeToCSV(data, filename) {
   const csvWriter = createCsvWriter({
     path: filename,
     header: [
-      { id: 'searchDate', title: 'Search Date'},
+      { id: "searchDate", title: "Search Date" },
       { id: "airport", title: "Airport" },
       { id: "productName", title: "Product Name" },
       { id: "fromDate", title: "From Date" },
@@ -124,35 +143,74 @@ async function writeToCSV(data, filename) {
 async function main() {
   let options = new chrome.Options();
   options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+  let driver = await new Builder()
+    .forBrowser("chrome")
+    .setChromeOptions(options)
+    .build();
+  
+  try {
+    const airports = [
+      "Birmingham",
+      "Bristol",
+      "Cardiff",
+      "East Midlands",
+      "Edinburgh",
+      "Gatwick",
+      "Glasgow",
+      "Heathrow",
+      "Leeds Bradford",
+      "Liverpool",
+      "Luton",
+      "Manchester",
+      "Newcastle",
+      "Southampton",
+    ];
+    const searchDate = new Date();
+    console.log(`Search date: ${searchDate}`);
 
-  let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
+    for (const airport of airports) {
+      const filename = `${airport}_parking_data.csv`;
 
-  const airports = ["Birmingham", "Bristol", "Cardiff", "East Midlands", "Edinburgh", "Gatwick", "Glasgow", "Heathrow", "Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton"];
-  const searchDate = new Date();
-  console.log(`Search date: ${searchDate}`);
+      let allData = [];
 
-  for (const airport of airports) {
-    const filename = `${airport}_parking_data.csv`;
+      const webdriver = require("selenium-webdriver");
 
-    let allData = [];
+      for (let i = 1; i <= 2; i++) {
+        console.log(`starting iteration ${i}`);
+        try {
+          const fromDate = addDays(new Date(), i);
+          const toDate = addDays(fromDate, 7);
+          const formattedFromDate = format(fromDate, "yyyy-MM-dd");
+          const formattedToDate = format(toDate, "yyyy-MM-dd");
+          console.log(
+            `Scraping data for dates ${formattedFromDate} to ${formattedToDate}`
+          );
+          const data = await scrapeData(
+            formattedFromDate,
+            formattedToDate,
+            airport
+          );
+          allData.push(...data);
+          console.log(`Finished iteration ${i}`);
+        } catch (error) {
+          if (error instanceof webdriver.error.StaleElementReferenceError) {
+            console.error(
+              "Encountered a stale element error, skipping this iteration...",
+              error
+            );
+            continue;
+          } else {
+            console.error("Encountered an error, re-throwing...", error);
+            throw error;
+          }
+        }
+      }
 
-    for (let i = 1; i <= 2; i++) {
-      const fromDate = addDays(new Date(), i);
-      const toDate = addDays(fromDate, 7);
-      const formattedFromDate = format(fromDate, "yyyy-MM-dd");
-      const formattedToDate = format(toDate, "yyyy-MM-dd");
-
-      const data = await scrapeData(
-        formattedFromDate,
-        formattedToDate,
-        airport
-      );
-      allData.push(...data);
+      await writeToCSV(allData, filename);
     }
-
-    await writeToCSV(allData, filename);
+  } catch (error) {
+    console.error("Encountered an error", error);
   }
-
   await driver.quit();
 }
 
