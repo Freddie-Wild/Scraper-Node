@@ -8,6 +8,8 @@ async function scrapeData(fromDate, toDate, airport) {
   let options = new chrome.Options();
   options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 
+  let promoCode = "SP20UK";
+
   let driver = await new Builder()
     .forBrowser("chrome")
     .setChromeOptions(options)
@@ -15,7 +17,7 @@ async function scrapeData(fromDate, toDate, airport) {
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
 
   try {
-    await driver.get("https://www.skyparksecure.com/?promo=SP20UK");
+    await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
 
     const cookiesButton = await driver.wait(
       until.elementLocated(By.id("onetrust-accept-btn-handler")),
@@ -45,46 +47,6 @@ async function scrapeData(fromDate, toDate, airport) {
       20000
     );
 
-    /*
-
-    console.log("Waiting for reveal button");
-    const revealButton = await driver.wait(
-      until.elementLocated(By.className("btn-reveal")),
-      10000
-    );
-    await revealButton.click();
-    console.log("Clicked reveal button");
-
-    console.log("Waiting for email input");
-    const emailInput = await driver.wait(
-      until.elementLocated(By.css('input[type="email"]')),
-      10000
-    );
-    await emailInput.clear();
-    await emailInput.sendKeys("test@test.com");
-    console.log("Entered email address");
-
-    try {
-      const modalLocator = By.className("sps-modal-container");
-      await driver.wait(until.elementLocated(modalLocator), 10000);
-      await driver.wait(
-        until.elementIsVisible(driver.findElement(modalLocator)),
-        10000
-      );
-
-      const activateButtonLocator = By.css(
-        ".sps-modal-container .btn.btn-secondary"
-      );
-      const activateButton = await driver.wait(
-        until.elementLocated(activateButtonLocator),
-        10000
-      );
-      await activateButton.click();
-    } catch (error) {
-      console.error("Encountered an error", error);
-    }
-    */
-
     await driver.wait(
       until.elementsLocated(By.className("parking_info_block")),
       20000
@@ -111,6 +73,7 @@ async function scrapeData(fromDate, toDate, airport) {
         price,
         oldPrice,
         searchDate,
+        promoCode
       });
     }
 
@@ -135,6 +98,7 @@ async function writeToCSV(data, filename) {
       { id: "toDate", title: "To Date" },
       { id: "price", title: "Discounted Price" },
       { id: "oldPrice", title: "Original Price" },
+      { id: "promoCode", title: "Promo Code" },
     ],
     append: fs.existsSync(filename),
   });
@@ -213,8 +177,9 @@ async function main() {
     }
   } catch (error) {
     console.error("Encountered an error", error);
-  }
+  } finally {
   await driver.quit();
+  }
 }
 
 main();
