@@ -142,7 +142,7 @@ async function main() {
 
       const webdriver = require("selenium-webdriver");
 
-      for (let i = 1; i <= 30; i++) {
+      for (let i = 1; i <= 2; i++) {
         console.log(`starting iteration ${i}`);
         try {
           const fromDate = addDays(new Date(), i);
