@@ -142,7 +142,7 @@ async function main() {
 
       const webdriver = require("selenium-webdriver");
 
-      for (let i = 1; i <= 2; i++) {
+      for (let i = 1; i <= 15; i++) {
         console.log(`starting iteration ${i}`);
         try {
           const fromDate = addDays(new Date(), i);
@@ -170,7 +170,7 @@ async function main() {
             console.error("Encountered an error, re-throwing...", error);
             throw error;
           }
-        }
+        } 
       }
 
       await writeToCSV(allData, filename);
