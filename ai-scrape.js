@@ -57,8 +57,8 @@ async function analyzeHtmlElementsForSearch(elementsData) {
 }
 
 async function generateSeleniumCode(analysisResult) {
-    const seleniumPrompt = `Translate the following requirements into JavaScript Selenium WebDriver code to automate a web form submission based on the analyzed HTML elements:\n\n${analysisResult} we should be scraping Manchester Airport for the 1st of March to the 7th of March 2024 from 01:00 to 01:00 on the website ${websiteURL}`;
-
+    const seleniumPrompt = `Translate the following requirements into JavaScript Selenium WebDriver code to automate a web form submission based on the analyzed HTML elements using stricly the names in the following:\n\n${analysisResult} we should be scraping Manchester Airport for the 1st of March to the 7th of March 2024 from 01:00 to 01:00 on the website ${websiteURL}`;
+    console.log(analysisResult)
     try {
         const completion = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
@@ -74,5 +74,5 @@ async function generateSeleniumCode(analysisResult) {
     }
 }
 
-const websiteURL = 'https://www.skyparksecure.com/?promo=sp20uk';
+const websiteURL = 'https://airparks.com';
 fetchWebsiteHTML(websiteURL);

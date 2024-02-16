@@ -1,0 +1,36 @@
+<!-- Example form in your index.html within 'public' directory -->
+<form id="scrapeForm">
+    <input type="text" id="airport" name="airport" placeholder="Airport" required>
+    <input type="date" id="fromDate" name="fromDate" required>
+    <input type="date" id="toDate" name="toDate" required>
+    <button type="submit">Scrape Data</button>
+  </form>
+  <div id="results"></div>
+  
+  <script>
+    document.getElementById('scrapeForm').onsubmit = async function(e) {
+      e.preventDefault();
+      const formData = {
+        airport: document.getElementById('airport').value,
+        fromDate: document.getElementById('fromDate').value,
+        toDate: document.getElementById('toDate').value
+      };
+  
+      const response = await fetch('/scrape', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        document.getElementById('results').textContent = JSON.stringify(data, null, 2);
+      } else {
+        const error = await response.text();
+        document.getElementById('results').textContent = `Error: ${error}`;
+      }
+    };
+  </script>
+  
