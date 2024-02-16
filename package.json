@@ -9,8 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
     "csv-writer": "^1.6.0",
     "date-fns": "^3.1.0",
+    "dotenv": "^16.4.4",
+    "openai": "^4.28.0",
     "selenium-webdriver": "^4.16.0"
   },
   "description": ""
