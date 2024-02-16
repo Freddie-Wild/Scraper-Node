@@ -31,7 +31,7 @@ For each airport, the script collects parking data for the next two weeks and wr
 npm install
 ```
 
-```node index-discount.js```
+```node manual-scrape.js```
 
 ## Output
 
