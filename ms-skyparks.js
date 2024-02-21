@@ -5,9 +5,11 @@ const { addDays, format } = require("date-fns");
 const fs = require("fs");
 
 async function scrapeData(driver, fromDate, toDate, airport) {
+
+  const promoCode = "VACAY24";
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
   try {
-    await driver.get(`https://www.skyparksecure.com/?promo=SP20UK`);
+    await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
 
     let dropdown = await driver.findElement(By.className("airportSelector"));
     await dropdown.click();
@@ -39,7 +41,7 @@ async function scrapeData(driver, fromDate, toDate, airport) {
         price,
         oldPrice,
         searchDate,
-        promoCode: "SP20UK"
+        promoCode: promoCode
       });
     }
     console.info(`Scraping completed for ${airport} from ${fromDate} to ${toDate}`);
@@ -80,14 +82,14 @@ async function main() {
       console.log("Accepted cookies");
   
       const airports = [
-        "Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
-        "Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
-      ];
+        //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
+        //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
+        "Luton"]
       for (const airport of airports) {
         let allData = [];
-        for (let i = 1; i <= 30; i++) {
+        for (let i = 1; i <= 90; i++) {
           const fromDate = addDays(new Date(), i);
-          const toDate = addDays(fromDate, 7);
+          const toDate = addDays(fromDate, 8);
           const formattedFromDate = format(fromDate, "yyyy-MM-dd");
           const formattedToDate = format(toDate, "yyyy-MM-dd");
           console.log(`Scraping data for dates ${formattedFromDate} to ${formattedToDate}`);

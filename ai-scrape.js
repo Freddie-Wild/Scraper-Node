@@ -4,6 +4,7 @@ const { OpenAI } = require('openai');
 require('dotenv').config(); 
 
 const openai = new OpenAI(process.env.OPENAI_API_KEY);
+//const openai = new OpenAI(base_url="http://localhost:1234/v", api_key="not-needed")
 
 async function fetchWebsiteHTML(url) {
     try {
@@ -74,5 +75,5 @@ async function generateSeleniumCode(analysisResult) {
     }
 }
 
-const websiteURL = 'https://airparks.com';
+const websiteURL = 'https://www.looking4.com/uk/airport-parking';
 fetchWebsiteHTML(websiteURL);
