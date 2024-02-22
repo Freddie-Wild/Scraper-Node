@@ -75,5 +75,5 @@ async function generateSeleniumCode(analysisResult) {
     }
 }
 
-const websiteURL = 'https://www.looking4.com/uk/airport-parking';
+const websiteURL = 'https://www.london-luton.co.uk/parking';
 fetchWebsiteHTML(websiteURL);
