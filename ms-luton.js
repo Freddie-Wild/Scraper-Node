@@ -6,37 +6,38 @@ const fs = require("fs");
 const airport = 'Luton'
 
 async function scrapeData(driver, fromDate, toDate) {
-
- 
   console.info(`Starting scrape for Luton from ${fromDate} to ${toDate}`);
   try {
     await driver.get(`https://parking.london-luton.co.uk/search?dateFrom=${fromDate}&timeFrom=08:00&dateTo=${toDate}&timeTo=20:00&direction=OUTBOUND&returnTrip=true`);
 
-    console.log('url loaded')
-    await driver.wait(until.elementsLocated(By.css(".product-list .product-card")), 20000);
+    let footer = await driver.findElement(By.css('footer'));
+    await driver.executeScript("arguments[0].scrollIntoView(true);", footer);
+    console.log('Scrolled to footer')
 
-    let blocks = await driver.findElements(By.css(".product-list .product-card"));
-    console.log(`Found ${blocks.length} blocks`);    let data = [];
+    await driver.wait(until.elementsLocated(By.css(".product-card")), 20000);
+    await driver.wait(() => driver.executeScript('return document.readyState').then(state => state === 'complete'), 10000);
+
+    let blocks = await driver.findElements(By.css(".product-card"));
+    console.log(`Found ${blocks.length} blocks`);    
+    let data = [];
     for (let block of blocks) {
-
         await driver.wait(until.elementsLocated(By.css(".product-card__header")), 20000);
+        await driver.executeScript("arguments[0].scrollIntoView(true);", block);
 
-       
-        let productNameText = await block.findElement(By.css(".product-card__header")).getText();
-        let productName = productNameText.trim().toLowerCase(); // Normalize the text
+
+    let productNameText = await driver.executeScript("return arguments[0].querySelector('.product-card__header').textContent;", block);
+        let productName = productNameText.trim().toLowerCase(); 
         
         if (productName.includes("fast track") || productName.includes("donation")) {
-            continue; // Skip this iteration and move to the next block
-        }
-        
-        // Execute script within the context of the block to get the price
+          console.log("Skipping block with product name:", productName)
+            continue; 
+        } else {
         let price = await driver.executeScript("return arguments[0].querySelector('.text-2xl.font-bold').textContent;", block);
-        
         let oldPrice;
         try {
-          oldPrice = await block.findElement(By.className("old-price")).getText();
+          oldPrice = await block.findElement(By.css("old-price")).getText();
         } catch (error) {
-          oldPrice = price; // If there's no old price, use the current price
+          oldPrice = price; 
         }
         
         let searchDate = new Date().toISOString();
@@ -50,6 +51,9 @@ async function scrapeData(driver, fromDate, toDate) {
           searchDate,
           promoCode: 'None'
         });
+
+        }
+        
       }
       
     console.info(`Scraping completed for ${airport} from ${fromDate} to ${toDate}`);
@@ -84,18 +88,13 @@ async function main() {
     let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
   
     try {
-      await driver.get('https://www.skyparksecure.com/');
-      const cookiesButton = await driver.wait(until.elementLocated(By.id("onetrust-accept-btn-handler")), 10000);
-      await cookiesButton.click();
-      console.log("Accepted cookies");
-  
       const airports = [
         //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
         //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
         "Luton"]
       for (const airport of airports) {
         let allData = [];
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 30; i++) {
           const fromDate = addDays(new Date(), i);
           const toDate = addDays(fromDate, 8);
           const formattedFromDate = format(fromDate, "yyyy-MM-dd");
