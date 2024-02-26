@@ -51,9 +51,7 @@ async function scrapeData(driver, fromDate, toDate) {
           searchDate,
           promoCode: 'None'
         });
-
         }
-        
       }
       
     console.info(`Scraping completed for ${airport} from ${fromDate} to ${toDate}`);
@@ -88,13 +86,8 @@ async function main() {
     let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
   
     try {
-      const airports = [
-        //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
-        //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
-        "Luton"]
-      for (const airport of airports) {
         let allData = [];
-        for (let i = 1; i <= 30; i++) {
+        for (let i = 1; i <= 90; i++) {
           const fromDate = addDays(new Date(), i);
           const toDate = addDays(fromDate, 8);
           const formattedFromDate = format(fromDate, "yyyy-MM-dd");
@@ -105,7 +98,7 @@ async function main() {
         }
         const filename = `${airport}_parking_data.csv`;
         await writeToCSV(allData, filename);
-      }
+      
     } catch (error) {
       console.error("Encountered an error", error);
     } finally {
