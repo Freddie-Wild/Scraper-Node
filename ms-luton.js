@@ -4,6 +4,8 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 const { addDays, format } = require("date-fns");
 const fs = require("fs");
 const airport = 'Luton'
+const today = new Date();
+const formattedToday = format(today, "yyyy-MM-dd");
 
 async function scrapeData(driver, fromDate, toDate) {
   console.info(`Starting scrape for Luton from ${fromDate} to ${toDate}`);
@@ -89,14 +91,14 @@ async function main() {
         let allData = [];
         for (let i = 1; i <= 90; i++) {
           const fromDate = addDays(new Date(), i);
-          const toDate = addDays(fromDate, 8);
+          const toDate = addDays(fromDate, 7);
           const formattedFromDate = format(fromDate, "yyyy-MM-dd");
           const formattedToDate = format(toDate, "yyyy-MM-dd");
           console.log(`Scraping data for dates ${formattedFromDate} to ${formattedToDate}`);
           const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport);
           allData.push(...data);
         }
-        const filename = `${airport}_parking_data.csv`;
+        const filename = `LTN_Direct_${airport}_parking_data_${formattedToday}.csv`;
         await writeToCSV(allData, filename);
       
     } catch (error) {

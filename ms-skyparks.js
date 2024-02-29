@@ -3,10 +3,12 @@ const chrome = require("selenium-webdriver/chrome");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 const { addDays, format } = require("date-fns");
 const fs = require("fs");
+const today = new Date();
+const formattedToday = format(today, "yyyy-MM-dd");
 
 async function scrapeData(driver, fromDate, toDate, airport) {
 
-  const promoCode = "VACAY24";
+  const promoCode = "";
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
   try {
     await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
@@ -82,6 +84,7 @@ async function main() {
       console.log("Accepted cookies");
   
       const airports = [
+        // Reference airports
         //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
         //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
         "Luton"]
@@ -89,14 +92,14 @@ async function main() {
         let allData = [];
         for (let i = 1; i <= 90; i++) {
           const fromDate = addDays(new Date(), i);
-          const toDate = addDays(fromDate, 8);
+          const toDate = addDays(fromDate, 7);
           const formattedFromDate = format(fromDate, "yyyy-MM-dd");
           const formattedToDate = format(toDate, "yyyy-MM-dd");
           console.log(`Scraping data for dates ${formattedFromDate} to ${formattedToDate}`);
           const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport);
           allData.push(...data);
         }
-        const filename = `${airport}_parking_data.csv`;
+        const filename = `Skyparks_${airport}_${formattedToday}_parking_data.csv`;
         await writeToCSV(allData, filename);
       }
     } catch (error) {
