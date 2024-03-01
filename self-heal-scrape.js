@@ -8,6 +8,7 @@ const formattedToday = format(today, "yyyy-MM-dd");
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { OpenAI } = require('openai');
+const path = require('path');
 require('dotenv').config(); 
 
 const openai = new OpenAI(process.env.OPENAI_API_KEY);
@@ -19,6 +20,7 @@ async function scrapeData(driver, fromDate, toDate, airport) {
   const promoCode = "";
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
   try {
+    // BEGIN_SCRAPER_CODE
     await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
 
     let dropdown = await driver.findElement(By.className("airportSelector"));
@@ -30,6 +32,7 @@ async function scrapeData(driver, fromDate, toDate, airport) {
     await driver.executeScript(`document.getElementById('dateBairportParking').value = '${toDate}';`);
     await driver.findElement(By.id("airportParkingSearch")).click();
     await driver.wait(until.elementsLocated(By.className("parking_info_block")), 20000);
+    // END_SCRAPER_CODE
 
     let blocks = await driver.findElements(By.className("parking_info_block"));
     let data = [];
@@ -132,20 +135,49 @@ async function main() {
   }
 
   async function attemptRepair() {
-    // Fetch current HTML and analyze
+    // Fetch current HTML and analyse
     const elementsData = await fetchWebsiteHTML();
     const analysisResult = await analyzeHtmlElementsForSearch(elementsData);
     
     // Generate new Selenium code based on analysis
     const newCode = await generateSeleniumCode(analysisResult);
+    await updateScraperCode(newCode)
     
     if (newCode) {
-      // Here, you would dynamically update your scraper's code
-      // This step is highly conceptual and would require a dynamic code execution environment
+      // Dynamically update the scraper with the new code
       return true;
     }
     
     return false;
+  }
+
+  async function updateScraperCode(newCode) {
+    const scraperFilePath = path.join(__dirname, 'scraper.js');
+    
+    try {
+      // Read the current contents of the scraper file
+      let content = await fs.readFile(scraperFilePath, { encoding: 'utf8' });
+  
+      // Define the markers that surround the code to be replaced
+      const beginMarker = '// BEGIN_SCRAPER_CODE';
+      const endMarker = '// END_SCRAPER_CODE';
+  
+      // Extract the part before and after the existing Selenium code
+      const partBeforeCode = content.split(beginMarker)[0] + beginMarker;
+      const partAfterCode = endMarker + content.split(endMarker)[1];
+  
+      // Combine them with the new code
+      const updatedContent = `${partBeforeCode}\n${newCode}\n${partAfterCode}`;
+  
+      // Write the updated content back to the scraper file
+      await fs.writeFile(scraperFilePath, updatedContent, { encoding: 'utf8' });
+  
+      console.log('Scraper code updated successfully.');
+      return true;
+    } catch (error) {
+      console.error('Failed to update scraper code:', error);
+      return false;
+    }
   }
   
   async function fetchWebsiteHTML(url) {
