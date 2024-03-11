@@ -13,6 +13,38 @@ require('dotenv').config();
 
 const openai = new OpenAI(process.env.OPENAI_API_KEY);
 
+async function writeToCSV(data, filename) {
+  const csvWriter = createCsvWriter({
+    path: filename,
+    header: [
+      { id: "searchDate", title: "Search Date" },
+      { id: "airport", title: "Airport" },
+      { id: "productName", title: "Product Name" },
+      { id: "fromDate", title: "From Date" },
+      { id: "toDate", title: "To Date" },
+      { id: "price", title: "Discounted Price" },
+      { id: "oldPrice", title: "Original Price" },
+      { id: "promoCode", title: "Promo Code" },
+    ],
+    append: fs.existsSync(filename),
+  });
+  await csvWriter.writeRecords(data);
+  console.info(`Data successfully written to ${filename}`);
+
+}
+
+async function handleScrapingFailure(error) {
+  console.log("Attempting to repair the scraper...");
+  const repairSuccessful = await attemptRepair();
+  
+  if (repairSuccessful) {
+    console.log("Repair successful. Retrying scrape...");
+    scrapeData(); // Retry scraping
+  } else {
+    console.error("Repair failed. Exiting.");
+  }
+}
+
 async function scrapeData(driver, fromDate, toDate, airport) {
 
   try {
@@ -21,6 +53,7 @@ async function scrapeData(driver, fromDate, toDate, airport) {
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
   try {
     // BEGIN_SCRAPER_CODE
+    /*
     await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
 
     let dropdown = await driver.findElement(By.className("airportSelector"));
@@ -31,8 +64,15 @@ async function scrapeData(driver, fromDate, toDate, airport) {
     await driver.executeScript(`document.getElementById('dateAairportParking').value = '${fromDate}';`);
     await driver.executeScript(`document.getElementById('dateBairportParking').value = '${toDate}';`);
     await driver.findElement(By.id("airportParkingSearch")).click();
-    await driver.wait(until.elementsLocated(By.className("parking_info_block")), 20000);
+    */
     // END_SCRAPER_CODE
+
+    try {
+    await driver.wait(until.elementsLocated(By.className("parking_info_block")), 20000);
+    } catch (error) {
+        console.error("Error waiting for parking_info_block:", error);
+        handleScrapingFailure(error);
+        }
 
     let blocks = await driver.findElements(By.className("parking_info_block"));
     let data = [];
@@ -65,26 +105,7 @@ async function scrapeData(driver, fromDate, toDate, airport) {
     console.error("Error during scraping:", error);
     await handleScrapingFailure(error)
 }
-
-async function writeToCSV(data, filename) {
-  const csvWriter = createCsvWriter({
-    path: filename,
-    header: [
-      { id: "searchDate", title: "Search Date" },
-      { id: "airport", title: "Airport" },
-      { id: "productName", title: "Product Name" },
-      { id: "fromDate", title: "From Date" },
-      { id: "toDate", title: "To Date" },
-      { id: "price", title: "Discounted Price" },
-      { id: "oldPrice", title: "Original Price" },
-      { id: "promoCode", title: "Promo Code" },
-    ],
-    append: fs.existsSync(filename),
-  });
-  await csvWriter.writeRecords(data);
-  console.info(`Data successfully written to ${filename}`);
-
-}}
+}
 
 async function main() {
     let options = new chrome.Options().addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
@@ -122,17 +143,7 @@ async function main() {
     }
   }
 
-  async function handleScrapingFailure(error) {
-    console.log("Attempting to repair the scraper...");
-    const repairSuccessful = await attemptRepair();
-    
-    if (repairSuccessful) {
-      console.log("Repair successful. Retrying scrape...");
-      scrapeData(); // Retry scraping
-    } else {
-      console.error("Repair failed. Exiting.");
-    }
-  }
+  
 
   async function attemptRepair() {
     // Fetch current HTML and analyse
@@ -253,8 +264,5 @@ async function generateSeleniumCode(analysisResult) {
 }
 
 const websiteURL = 'https://www.skyparksecure.com';
-fetchWebsiteHTML(websiteURL);
-
   
-  
-  main();
+main();

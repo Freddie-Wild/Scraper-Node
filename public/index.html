@@ -1,36 +1,85 @@
-<!-- Example form in your index.html within 'public' directory -->
-<form id="scrapeForm">
-    <input type="text" id="airport" name="airport" placeholder="Airport" required>
-    <input type="date" id="fromDate" name="fromDate" required>
-    <input type="date" id="toDate" name="toDate" required>
-    <button type="submit">Scrape Data</button>
-  </form>
-  <div id="results"></div>
-  
-  <script>
-    document.getElementById('scrapeForm').onsubmit = async function(e) {
-      e.preventDefault();
-      const formData = {
-        airport: document.getElementById('airport').value,
-        fromDate: document.getElementById('fromDate').value,
-        toDate: document.getElementById('toDate').value
-      };
-  
-      const response = await fetch('/scrape', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      if (response.ok) {
-        const data = await response.json();
-        document.getElementById('results').textContent = JSON.stringify(data, null, 2);
-      } else {
-        const error = await response.text();
-        document.getElementById('results').textContent = `Error: ${error}`;
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 10px
       }
-    };
-  </script>
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <form id="scrapeForm">
+        <input type="text" id="airport" name="airport" placeholder="Airport" required>
+        <input type="date" id="fromDate" name="fromDate" required>
+        <input type="date" id="toDate" name="toDate" required>
+        <button type="submit">Scrape Data</button>
+      </form>
+      <div id="results"></div>
+      
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById('scrapeForm').onsubmit = async function(e) {
+        e.preventDefault();
+        const formData = {
+          airport: document.getElementById('airport').value,
+          fromDate: document.getElementById('fromDate').value,
+          toDate: document.getElementById('toDate').value
+        };
+    
+        const response = await fetch('/scrape', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+          const data = await response.json();
+          document.getElementById('results').textContent = JSON.stringify(data, null, 2);
+        } else {
+          const error = await response.text();
+          document.getElementById('results').textContent = `Error: ${error}`;
+        }
+      };
+    </script>
+  </body>
+</html>
+
+
   
