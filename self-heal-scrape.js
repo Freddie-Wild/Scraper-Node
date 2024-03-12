@@ -13,6 +13,43 @@ require('dotenv').config();
 
 const openai = new OpenAI(process.env.OPENAI_API_KEY);
 
+const assistant = await openai.beta.assistants.create({
+  name: "price-scraper-help",
+  instructions: "you are a software engineer you will assist with creating selenium code in node to be used as part of a price scraper, you will need to remember to always pass through variables such as ${airport} ${fromDate} ${toDate}  ${promoCode} ",
+  tools: [{ type: "code_interpreter" }],
+  model: "gpt-4-turbo-preview"
+});
+
+const thread = await openai.beta.threads.create();
+
+const assistantID = 'asst_B7fSltQN22DHrarwXPyqpHUu';
+
+require('dotenv').config();
+
+/* Function to send queries to your Assistant
+async function queryAssistant(assistantID, query) {
+    const headers = {
+        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+        'Content-Type': 'application/json'
+    };
+
+    const data = {
+        inputs: query,
+        model: "gpt-3.5-turbo", // Adjust according to your Assistant's settings
+        temperature: 0.5,
+        max_tokens: 1024,
+    };
+
+    try {
+        const response = await axios.post(`https://api.openai.com/v1/assistants/${assistantID}/completions`, data, { headers: headers });
+        return response.data.choices[0].message.content; // Extracting the response
+    } catch (error) {
+        console.error('Error querying the Assistant:', error);
+        return null;
+    }
+}
+*/
+
 async function writeToCSV(data, filename) {
   const csvWriter = createCsvWriter({
     path: filename,
@@ -143,24 +180,23 @@ async function main() {
     }
   }
 
-  
-
   async function attemptRepair() {
-    // Fetch current HTML and analyse
-    const elementsData = await fetchWebsiteHTML();
-    const analysisResult = await analyzeHtmlElementsForSearch(elementsData);
-    
-    // Generate new Selenium code based on analysis
-    const newCode = await generateSeleniumCode(analysisResult);
-    await updateScraperCode(newCode)
-    
-    if (newCode) {
-      // Dynamically update the scraper with the new code
-      return true;
-    }
-    
-    return false;
+      const htmlElementsQuery = `Fetch and analyze the HTML structure of ${websiteURL} for scraping purposes.`;
+      const elementsAnalysis = await queryAssistant(assistantID, htmlElementsQuery);
+  
+      if (elementsAnalysis) {
+          const repairQuery = `Based on the following analysis: ${elementsAnalysis}, generate Selenium WebDriver code for scraping.`;
+          const newCode = await queryAssistant(assistantID, repairQuery);
+          
+          if (newCode) {
+              await updateScraperCode(newCode);
+              return true;
+          }
+      }
+      
+      return false;
   }
+  
 
   async function updateScraperCode(newCode) {
     const scraperFilePath = path.join(__dirname, 'scraper.js');

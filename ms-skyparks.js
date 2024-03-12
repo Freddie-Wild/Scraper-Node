@@ -93,10 +93,10 @@ async function main() {
         // Reference airports
         //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
         //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
-        "Manchester","Stansted","East Midlands"]
+        "Stansted","East Midlands"]
       for (const airport of airports) {
         let allData = [];
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 30; i++) {
           const fromDate = addDays(new Date(), i);
           const toDate = addDays(fromDate, 7);
           const formattedFromDate = format(fromDate, "yyyy-MM-dd");
