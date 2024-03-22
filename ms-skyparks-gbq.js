@@ -5,10 +5,11 @@ const { addDays, format } = require("date-fns");
 const fs = require("fs");
 const today = new Date();
 const formattedToday = format(today, "yyyy-MM-dd");
+const competitor = "Skyparksecure";
 
 async function scrapeData(driver, fromDate, toDate, airport) {
 
-  const promoCode = "EASTER24";
+  const promoCode = "COMPARE";
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
   try {
     await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
@@ -48,7 +49,8 @@ async function scrapeData(driver, fromDate, toDate, airport) {
         oldPrice,
         discountPercentage,
         searchDate,
-        promoCode: promoCode
+        promoCode: promoCode,
+        competitor
       });
     }
     console.info(`Scraping completed for ${airport} from ${fromDate} to ${toDate}`);
@@ -59,41 +61,50 @@ async function scrapeData(driver, fromDate, toDate, airport) {
   }
 }
 
-async function writeToCSV(data, filename) {
-  const csvWriter = createCsvWriter({
-    path: filename,
-    header: [
-      { id: "searchDate", title: "Search Date" },
-      { id: "airport", title: "Airport" },
-      { id: "productName", title: "Product Name" },
-      { id: "fromDate", title: "From Date" },
-      { id: "toDate", title: "To Date" },
-      { id: "price", title: "Discounted Price" },
-      { id: "oldPrice", title: "Original Price" },
-      { id: "discountPercentage", title: "Discount %" },
-      { id: "promoCode", title: "Promo Code" },
-    ],
-    append: fs.existsSync(filename),
-  });
-  await csvWriter.writeRecords(data);
-  console.info(`Data successfully written to ${filename}`);
+async function writeToCSV(data, filenamePrefix) {
+  let chunkSize = 50; // Number of records per file
+  for (let i = 0; i < data.length; i += chunkSize) {
+    const chunkData = data.slice(i, i + chunkSize);
+    const partNum = Math.floor(i / chunkSize) + 1; // Calculate part number for filename
+    const filename = `${filenamePrefix}_part${partNum}.csv`; // Updated filename with part number
+    const csvWriter = createCsvWriter({
+      path: filename,
+      header: [
+        { id: "searchDate", title: "Search_Date" },
+        { id: "competitor", title: "Competitor" },
+        { id: "airport", title: "Airport" },
+        { id: "productName", title: "Product_Name" },
+        { id: "fromDate", title: "From_Date" },
+        { id: "toDate", title: "To_Date" },
+        { id: "price", title: "Discounted_Price" },
+        { id: "oldPrice", title: "Original_Price" },
+        { id: "discountPercentage", title: "Discount_PC" },
+        { id: "promoCode", title: "Promo_Code" },
+      ],
+      append: false, // Since we are manually managing file parts, append should always be false
+    });
+    await csvWriter.writeRecords(chunkData);
+    console.info(`Data successfully written to ${filename}`);
+  }
 }
+
 
 async function main() {
     let options = new chrome.Options().addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
     let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
+
   
     try {
       await driver.get('https://www.skyparksecure.com/');
-      const cookiesButton = await driver.wait(until.elementLocated(By.id("onetrust-accept-btn-handler")), 10000);
-      await cookiesButton.click();
-      console.log("Accepted cookies");
+      // const cookiesButton = await driver.wait(until.elementLocated(By.id("onetrust-accept-btn-handler")), 10000);
+      //await cookiesButton.click();
+      // console.log("Accepted cookies");
   
       const airports = [
         // Reference airports
         //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
         //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
-        "Manchester","Stansted","East Midlands"]
+        "Manchester","Stansted","East Midlands", "Gatwick", "Heathrow", "Luton", "Birmingham", "Bristol", "Edinburgh", "Leeds Bradford", "Liverpool", "Newcastle"]
       for (const airport of airports) {
         let allData = [];
         for (let i = 1; i <= 90; i++) {
@@ -105,9 +116,8 @@ async function main() {
           const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport);
           allData.push(...data);
         }
-        const filename = `Skyparks_${airport}_${formattedToday}_parking_data.csv`;
-        await writeToCSV(allData, filename);
-      }
+    const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; // Prefix for filename
+    await writeToCSV(allData, filenamePrefix);      }
     } catch (error) {
       console.error("Encountered an error", error);
     } finally {
