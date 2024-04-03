@@ -62,11 +62,11 @@ async function scrapeData(driver, fromDate, toDate, airport) {
 }
 
 async function writeToCSV(data, filenamePrefix) {
-  let chunkSize = 50; // Number of records per file
+  let chunkSize = 50; 
   for (let i = 0; i < data.length; i += chunkSize) {
     const chunkData = data.slice(i, i + chunkSize);
-    const partNum = Math.floor(i / chunkSize) + 1; // Calculate part number for filename
-    const filename = `${filenamePrefix}_part${partNum}.csv`; // Updated filename with part number
+    const partNum = Math.floor(i / chunkSize) + 1; 
+    const filename = `${filenamePrefix}_part${partNum}.csv`; 
     const csvWriter = createCsvWriter({
       path: filename,
       header: [
@@ -81,7 +81,7 @@ async function writeToCSV(data, filenamePrefix) {
         { id: "discountPercentage", title: "Discount_PC" },
         { id: "promoCode", title: "Promo_Code" },
       ],
-      append: false, // Since we are manually managing file parts, append should always be false
+      append: false, 
     });
     await csvWriter.writeRecords(chunkData);
     console.info(`Data successfully written to ${filename}`);
@@ -101,10 +101,8 @@ async function main() {
       // console.log("Accepted cookies");
   
       const airports = [
-        // Reference airports
-        //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
-        //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
-        "Manchester","Stansted","East Midlands", "Gatwick", "Heathrow", "Luton", "Birmingham", "Bristol", "Edinburgh", "Leeds Bradford", "Liverpool", "Newcastle"]
+        "Manchester","Stansted","East Midlands", "Gatwick", "Heathrow", "Luton", "Birmingham",
+        "Bristol", "Edinburgh", "Leeds Bradford", "Liverpool", "Newcastle"]
       for (const airport of airports) {
         let allData = [];
         for (let i = 1; i <= 90; i++) {
@@ -116,7 +114,7 @@ async function main() {
           const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport);
           allData.push(...data);
         }
-    const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; // Prefix for filename
+    const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; 
     await writeToCSV(allData, filenamePrefix);      }
     } catch (error) {
       console.error("Encountered an error", error);
