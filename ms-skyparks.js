@@ -7,9 +7,8 @@ const today = new Date();
 const formattedToday = format(today, "yyyy-MM-dd");
 const competitor = "Skyparksecure";
 
-async function scrapeData(driver, fromDate, toDate, airport) {
+async function scrapeData(driver, fromDate, toDate, airport, promoCode) {
 
-  const promoCode = "COMPARE";
   console.info(`Starting scrape for ${airport} from ${fromDate} to ${toDate}`);
   try {
     await driver.get(`https://www.skyparksecure.com/?promo=${promoCode}`);
@@ -88,39 +87,49 @@ async function writeToCSV(data, filenamePrefix) {
   }
 }
 
+async function main(days, duration, promoCode, airports, loggingCallback) {
+  let options = new chrome.Options().addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+  let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
+  const intDuration = parseInt(duration);
+  const intDays = parseInt(days);
 
-async function main() {
-    let options = new chrome.Options().addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
-    let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
+  // Use the logging callback instead of console.log
+  const log = (message) => {
+      if (typeof loggingCallback === 'function') {
+          loggingCallback(message);
+      } else {
+          console.log(message); // Fallback to console.log if loggingCallback is not a function
+      }
+  };
 
-  
-    try {
+  try {
       await driver.get('https://www.skyparksecure.com/');
-      // const cookiesButton = await driver.wait(until.elementLocated(By.id("onetrust-accept-btn-handler")), 10000);
-      //await cookiesButton.click();
-      // console.log("Accepted cookies");
-  
-      const airports = [
-        "Manchester","Stansted","East Midlands", "Gatwick", "Heathrow", "Luton", "Birmingham",
-        "Bristol", "Edinburgh", "Leeds Bradford", "Liverpool", "Newcastle"]
+      // Example of using the log function
+      log(`Navigated to Skyparksecure`);
+
       for (const airport of airports) {
-        let allData = [];
-        for (let i = 1; i <= 90; i++) {
-          const fromDate = addDays(new Date(), i);
-          const toDate = addDays(fromDate, 7);
-          const formattedFromDate = format(fromDate, "yyyy-MM-dd");
-          const formattedToDate = format(toDate, "yyyy-MM-dd");
-          console.log(`Scraping data for dates ${formattedFromDate} to ${formattedToDate}`);
-          const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport);
-          allData.push(...data);
-        }
-    const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; 
-    await writeToCSV(allData, filenamePrefix);      }
-    } catch (error) {
-      console.error("Encountered an error", error);
-    } finally {
+          let allData = [];
+          for (let i = 1; i <= intDays; i++) {
+              const fromDate = addDays(new Date(), i);
+              const toDate = addDays(fromDate, intDuration);
+
+              const formattedFromDate = format(fromDate, "yyyy-MM-dd");
+              const formattedToDate = format(toDate, "yyyy-MM-dd");
+              log(`Scraping data for ${airport}: Dates ${formattedFromDate} to ${formattedToDate}`);
+              
+              const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport, promoCode);
+              allData.push(...data);
+          }
+          const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; 
+          await writeToCSV(allData, filenamePrefix);
+          log(`Data successfully written to ${filenamePrefix}.csv`);
+      }
+  } catch (error) {
+      log("Encountered an error: " + error.toString());
+  } finally {
       await driver.quit();
-    }
+      log("Browser closed");
   }
-  
-  main();
+}
+
+module.exports = main;

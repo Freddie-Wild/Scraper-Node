@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scrape Configuration</title>
+    <script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io(); // This should automatically connect to your server
+  socket.on('log', function(msg) {
+      const logElement = document.getElementById('log');
+      logElement.innerHTML += msg + '<br>'; // Append the log message
+  });
+</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        #log {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: 300px;
+            overflow-y: scroll;
+            width: 82%;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 80%;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style></head>
+<body>
+    <form id="scrapeForm">
+        Days: <input type="number" id="days" name="days"><br>
+        Duration: <input type="number" id="duration" name="duration"><br>
+        Promo Code: <input type="text" id="promoCode" name="promoCode"><br>
+        Airports: <select id="airports" name="airports" multiple>
+            <option value="Manchester">Manchester</option>
+            <option value="Stansted">Stansted</option>
+            <option value="East Midlands">East Midlands</option>
+
+        </select>
+        <button type="submit">Start Scraping</button>
+    </form>
+    <div id="log">Logs will appear here...</div>
+    
+
+
+    <script>
+        
+        document.getElementById("scrapeForm").onsubmit = async (e) => {
+            e.preventDefault();
+            const response = await fetch('/scrape', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                
+
+                body: JSON.stringify({
+                    days: document.getElementById('days').value,
+                    duration: document.getElementById('duration').value,
+                    promoCode: document.getElementById('promoCode').value,
+                    airports: Array.from(document.getElementById('airports').selectedOptions).map(option => option.value),
+                }),
+            });
+            const responseBody = await response.text();
+            console.log(responseBody);
+            // Handle response
+        };
+    </script>
+</body>
+</html>
