@@ -26,14 +26,16 @@ io.on('connection', (socket) => {
 app.post('/scrape', async (req, res) => {
     const { days, duration, promoCode, airports } = req.body;
 
+    const loggingCallback = (message) => {
+        io.emit('log', message); // Broadcast to all clients
+    };
+
     try {
-        await main(days, duration, promoCode, airports, (message) => {
-            io.emit('log', message); // Emit the message to all connected clients
-        });
-        res.send({ message: 'Scraping initiated successfully!' });
+        const generatedFileName = await main(days, duration, promoCode, airports, loggingCallback);
+        res.json({ success: true, url: `/csv/${generatedFileName}` });
     } catch (error) {
         console.error('Scraping failed:', error);
-        res.status(500).send({ error: 'An error occurred during scraping.' });
+        res.status(500).json({ error: 'An error occurred during scraping.' });
     }
 });
 

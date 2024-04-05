@@ -6,6 +6,7 @@ const fs = require("fs");
 const today = new Date();
 const formattedToday = format(today, "yyyy-MM-dd");
 const competitor = "Skyparksecure";
+const path = require('path');
 
 async function scrapeData(driver, fromDate, toDate, airport, promoCode) {
 
@@ -60,41 +61,40 @@ async function scrapeData(driver, fromDate, toDate, airport, promoCode) {
   }
 }
 
-async function writeToCSV(data, filenamePrefix) {
-  let chunkSize = 50; 
-  for (let i = 0; i < data.length; i += chunkSize) {
-    const chunkData = data.slice(i, i + chunkSize);
-    const partNum = Math.floor(i / chunkSize) + 1; 
-    const filename = `${filenamePrefix}_part${partNum}.csv`; 
-    const csvWriter = createCsvWriter({
-      path: filename,
-      header: [
-        { id: "searchDate", title: "Search_Date" },
-        { id: "competitor", title: "Competitor" },
-        { id: "airport", title: "Airport" },
-        { id: "productName", title: "Product_Name" },
-        { id: "fromDate", title: "From_Date" },
-        { id: "toDate", title: "To_Date" },
-        { id: "price", title: "Discounted_Price" },
-        { id: "oldPrice", title: "Original_Price" },
-        { id: "discountPercentage", title: "Discount_PC" },
-        { id: "promoCode", title: "Promo_Code" },
-      ],
-      append: false, 
-    });
-    await csvWriter.writeRecords(chunkData);
-    console.info(`Data successfully written to ${filename}`);
-  }
+async function writeToCSV(data, filename) {
+  // Construct the full path to save the file in the 'csv_files' directory
+  const filePath = path.join(__dirname, 'csv_files', filename); // Correctly construct the file path
+
+  const csvWriter = createCsvWriter({
+    // Use the constructed file path
+    path: filePath,
+    header: [
+      { id: "searchDate", title: "Search Date" },
+      { id: "airport", title: "Airport" },
+      { id: "productName", title: "Product Name" },
+      { id: "fromDate", title: "From Date" },
+      { id: "toDate", title: "To Date" },
+      { id: "price", title: "Discounted Price" },
+      { id: "oldPrice", title: "Original Price" },
+      { id: "discountPercentage", title: "Discount %" },
+      { id: "promoCode", title: "Promo Code" },
+    ],
+    // Check if the file already exists at the path
+    append: fs.existsSync(filePath),
+  });
+
+  await csvWriter.writeRecords(data);
+  console.info(`Data successfully written to ${filePath}`);
 }
 
 async function main(days, duration, promoCode, airports, loggingCallback) {
-  let options = new chrome.Options().addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
-  let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
-  const intDuration = parseInt(duration);
-  const intDays = parseInt(days);
+    let options = new chrome.Options().addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+    let driver = await new Builder().forBrowser("chrome").setChromeOptions(options).build();
+    let generatedFiles = [];
+    const intDuration = parseInt(duration);
+    const intDays = parseInt(days);
 
-  // Use the logging callback instead of console.log
-  const log = (message) => {
+    const log = (message) => {
       if (typeof loggingCallback === 'function') {
           loggingCallback(message);
       } else {
@@ -102,34 +102,40 @@ async function main(days, duration, promoCode, airports, loggingCallback) {
       }
   };
 
-  try {
-      await driver.get('https://www.skyparksecure.com/');
-      // Example of using the log function
-      log(`Navigated to Skyparksecure`);
+    try {
+        await driver.get('https://www.skyparksecure.com/');
+        log(`Navigated to Skyparksecure`);
 
-      for (const airport of airports) {
-          let allData = [];
-          for (let i = 1; i <= intDays; i++) {
-              const fromDate = addDays(new Date(), i);
-              const toDate = addDays(fromDate, intDuration);
+        for (const airport of airports) {
+            let allData = [];
+            for (let i = 1; i <= intDays; i++) {
+                const fromDate = addDays(new Date(), i);
+                const toDate = addDays(fromDate, intDuration);
 
-              const formattedFromDate = format(fromDate, "yyyy-MM-dd");
-              const formattedToDate = format(toDate, "yyyy-MM-dd");
-              log(`Scraping data for ${airport}: Dates ${formattedFromDate} to ${formattedToDate}`);
-              
-              const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport, promoCode);
-              allData.push(...data);
-          }
-          const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; 
-          await writeToCSV(allData, filenamePrefix);
-          log(`Data successfully written to ${filenamePrefix}.csv`);
-      }
-  } catch (error) {
-      log("Encountered an error: " + error.toString());
-  } finally {
-      await driver.quit();
-      log("Browser closed");
-  }
+                const formattedFromDate = format(fromDate, "yyyy-MM-dd");
+                const formattedToDate = format(toDate, "yyyy-MM-dd");
+                log(`Scraping data for ${airport}: Dates ${formattedFromDate} to ${formattedToDate}`);
+                
+                const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport, promoCode);
+                allData.push(...data);
+            }
+            const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`;
+            const completeFileName = `${filenamePrefix}.csv`;
+            // Ensure the directory is correctly referenced
+            await writeToCSV(allData, completeFileName);
+            log(`Data successfully written to ${completeFileName}`);
+            
+            generatedFiles.push(completeFileName); // Store just the filename or the relative path as needed
+        }
+
+        return generatedFiles; // Return outside the loop after processing all airports
+    } catch (error) {
+        log("Encountered an error: " + error.toString());
+    } finally {
+        await driver.quit();
+        log("Browser closed");
+    }
 }
+
 
 module.exports = main;
