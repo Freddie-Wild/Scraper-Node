@@ -96,15 +96,17 @@ async function main() {
   
     try {
       await driver.get('https://www.skyparksecure.com/');
+
+      // Commenting out the code to accept cookies as it is not required currently but may change in the future
       // const cookiesButton = await driver.wait(until.elementLocated(By.id("onetrust-accept-btn-handler")), 10000);
-      //await cookiesButton.click();
+      // await cookiesButton.click();
       // console.log("Accepted cookies");
   
       const airports = [
         // Reference airports
         //"Birmingham", "Bristol", "East Midlands", "Edinburgh", "Gatwick", "Heathrow",
         //"Leeds Bradford", "Liverpool", "Luton", "Manchester", "Newcastle", "Southampton", "Stansted"
-        "Manchester","Stansted","East Midlands", "Gatwick", "Heathrow", "Luton", "Birmingham", "Bristol", "Edinburgh", "Leeds Bradford", "Liverpool", "Newcastle"]
+        "Manchester","Stansted","East Midlands"]
       for (const airport of airports) {
         let allData = [];
         for (let i = 1; i <= 90; i++) {
@@ -116,7 +118,7 @@ async function main() {
           const data = await scrapeData(driver, formattedFromDate, formattedToDate, airport);
           allData.push(...data);
         }
-    const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`; // Prefix for filename
+    const filenamePrefix = `Skyparks_${airport}_${formattedToday}_parking_data`;
     await writeToCSV(allData, filenamePrefix);      }
     } catch (error) {
       console.error("Encountered an error", error);

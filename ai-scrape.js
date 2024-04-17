@@ -2,14 +2,14 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const { OpenAI } = require("openai");
 require("dotenv").config();
-const websiteURL = "https://www.skyparksecure.com";
+
+const websiteURL = "https://www.skyparksecure.com/";
 const threadId = "thread_QfPRVO4my5TmpKXrXuyekUHp";
 
 async function main() {
   try {
     fetchWebsiteHTML(websiteURL);
     const openai = new OpenAI(process.env.OPENAI_API_KEY);
-    //const openai = new OpenAI(base_url="http://localhost:1234/v", api_key="not-needed")
 
     async function fetchWebsiteHTML(url) {
       try {
@@ -45,11 +45,11 @@ async function main() {
 
     async function analyzeHtmlElementsForSearch(elementsData) {
       try {
-        const prompt = `Given the following HTML elements from a webpage, identify which elements could be used to make a search for airport parking. we will be looking for fields where we can enter an Airport, a park from time, a park to time.\n\n${JSON.stringify(
+        const prompt = `Given the following HTML elements from a webpage, identify which elements could be used to make a search for airport parking. we will be looking for fields where we can enter an Airport, what date the user needs parking to start from, what date the parking should last until. and a submit button\n\n${JSON.stringify(
           elementsData,
           null,
           2
-        )}`;
+        )} `;
 
         const completion = await openai.chat.completions.create({
           model: "gpt-3.5-turbo",
@@ -60,17 +60,18 @@ async function main() {
           stop: null,
         });
 
+        const analysisResult = completion.choices[0].message.content
+
         console.log("Analysis Result:", completion.choices[0]);
-        await generateSeleniumCode(completion.choices[0]);
+        await generateSeleniumCode(analysisResult);
       } catch (error) {
         console.error("Error analyzing HTML elements:", error);
       }
     }
 
     async function generateSeleniumCode(analysisResult) {
-      analysisContent = analysisResult.message.content;
       try {
-        const seleniumPrompt = `Translate the following requirements into JavaScript Selenium WebDriver code to automate a web form submission based on the analyzed HTML elements using stricly the names in the following:\n\n${analysisContent} we should be scraping Manchester Airport for the 1st of March to the 7th of March 2024 from 01:00 to 01:00 on the website ${websiteURL} please only include code and nothing else as this will be directly inserted into a codebase. avoid typing any other code formatting as this will be done automatically.`;
+        const seleniumPrompt = `Translate the following requirements into JavaScript Selenium WebDriver code to automate a web form submission based on the analyzed HTML elements using stricly the names in the following:\n\n${analysisResult} we should be scraping Manchester Airport for the 1st of March to the 7th of March 2024 from 01:00 to 01:00 on the website ${websiteURL} please only include code and nothing else as this will be directly inserted into a codebase. avoid typing any other code formatting as this will be done automatically.`;
 
         const threadMessages = await openai.beta.threads.messages.create(
           threadId,
@@ -97,7 +98,6 @@ async function main() {
         );
 
         const lastMessage = threadMessageList.data[0].content[0].text.value;
-        //console.log(threadMessageList.data[0].content[0].text.value);
         console.log(lastMessage)
 
       } catch (error) {
